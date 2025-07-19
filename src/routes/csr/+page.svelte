@@ -8,14 +8,14 @@ let palabra = $state('')
 </div>
 
 <div class="row">
-  <input name="palabra" bind:value={palabra} placeholder="Escribí una palabra" required />
+  <input name="palabra" data-testid="palabra" bind:value={palabra} placeholder="Escribí una palabra" required />
 </div>
 <div class="row">
-  <a class="link" href="/">Volver</a>
+  <a class="link" data-testid="back-link" href="/">Volver</a>
 </div>
 
 {#if palabra}
   <div class="row">
-    <p>La palabra "{palabra}" tiene {palabra.length} letras.</p>
+    <p data-testid="resultado">La palabra "{palabra}" tiene {palabra.length} letras.</p>
   </div>
 {/if}

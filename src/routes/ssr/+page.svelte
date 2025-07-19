@@ -11,17 +11,17 @@
 
 <div class="row">
   <form method="POST" use:enhance>
-    <input name="palabra" placeholder="Escribí una palabra" required />
-    <button type="submit">Contar letras</button>
+    <input name="palabra" placeholder="Escribí una palabra" data-testid="palabra" required />
+    <button type="submit" data-testid="submit">Contar letras</button>
   </form>
 </div>
 
 {#if form?.palabra}
   <div class="row">
-    <p>La palabra "{form.palabra}" tiene {form.longitud} letras.</p>
+    <p data-testid="resultado">La palabra "{form.palabra}" tiene {form.longitud} letras.</p>
   </div>
 {/if}
 
 <div class="row">
-  <a class="link" href="/">Volver</a>
+  <a data-testid="back-link" class="link" href="/">Volver</a>
 </div>
