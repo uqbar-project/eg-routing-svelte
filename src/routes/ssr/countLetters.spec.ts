@@ -37,7 +37,7 @@ describe('count letters', () => {
     expect(window.location.pathname).toBe('/')
   })
 
-  it('envía la palabra correctamente al hacer submit', async () => {
+  it('sends the word by doing a submit', async () => {
     const mockFetch = vi.fn().mockResolvedValue({
       ok: true,
       json: async () => ({

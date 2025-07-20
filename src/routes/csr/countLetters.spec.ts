@@ -1,12 +1,9 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/svelte'
 import Counter from './+page.svelte'
 import userEvent from '@testing-library/user-event'
 
 describe('count letters', () => {
-  beforeEach(() => {
-    vi.clearAllMocks()
-  })
 
   it('should start with empty string and should show no result', () => {
     render(Counter)
