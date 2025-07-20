@@ -153,16 +153,6 @@ Cada vez que presionamos el botón estamos yendo al servidor a procesar la palab
 
 ![ssr several times](./images/ssr_several_times.gif)
 
-## Esquema mixto
-
-Si renombramos nuestro archivo `+page.server.ts` a `+page.ts`, Svelte automáticamente va a trabajar en modo mixto
-
-- la primera vez irá al server a procesar la palabra
-- también descargará localmente el código (se transpilará de ts a js)
-- las sucesivas veces que presionemos el botón Submit se procesará en el cliente
-
-
-
 ## Testing
 
 ### CSR
