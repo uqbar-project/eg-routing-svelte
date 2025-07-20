@@ -1,6 +1,6 @@
 // tests/page.server.test.ts
 import { describe, it, expect } from 'vitest'
-import { actions } from './+page'
+import { actions } from './+page.server'
 import type { RequestEvent } from '@sveltejs/kit'
 import type { RouteParams } from './$types'
 
