@@ -1,6 +1,3 @@
-<script>
-  import './styles.css'
-</script>
 <div class="menu">
   <ul>
     <li><a href="/csr">Contar letras client side</a></li>
