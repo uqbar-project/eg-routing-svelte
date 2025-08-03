@@ -29,6 +29,21 @@ input {
   width: 25rem;
 }
 
+form {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+form input {
+  flex: 8;
+  min-width: 0;
+}
+
+form button {
+  flex: 2;
+}
+
 button {
   font-size: 1rem;
   padding: 0.5rem 1rem;
