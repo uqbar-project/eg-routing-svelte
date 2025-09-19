@@ -47,6 +47,7 @@ export default [
       'svelte/no-at-debug-tags': 'error',
       'svelte/no-reactive-functions': 'error',
       'svelte/no-reactive-literals': 'error',
+      'svelte/no-navigation-without-resolve': 'off',
       '@/semi': ['error', 'never'],
       '@/quotes': ['warn', 'single'],
       '@/indent': ['warn', 2],

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { enhance } from '$app/forms'
 
-  export let form: { palabra?: string; longitud?: number } | null
+  const { form } = $props<{ form: { palabra?: string; longitud?: number } | null }>()
 </script>
 
 <div class="row">

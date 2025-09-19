@@ -38,13 +38,7 @@ describe('count letters', () => {
   })
 
   it('sends the word by doing a submit', async () => {
-    const mockFetch = vi.fn().mockResolvedValue({
-      ok: true,
-      json: async () => ({
-        type: 'success',
-        data: { palabra: 'hola', longitud: 4 }
-      })
-    })
+    const mockFetch = vi.fn()
 
     globalThis.fetch = mockFetch
 
